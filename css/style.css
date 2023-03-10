@@ -1,0 +1,79 @@
+/*******General styles********/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+:root{
+    /*primary colors*/
+    --color-p1: hsl(0, 78%, 62%);
+    --color-p2: hsl(180, 62%, 55%);
+    --color-p3: hsl(34, 97%, 64%);
+    --color-p4:  hsl(212, 86%, 64%);
+    /*neutral colors*/
+    --color-n1:  hsl(234, 12%, 34%);
+    --color-n2: hsl(229, 6%, 66%);
+    --color-n3: hsl(0, 0%, 98%);
+}
+/***************************/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.13rem 0rem;
+    gap: 1.25rem;
+}
+#title {    
+    font-size: 2rem;
+    font-weight: 200;
+    color:var(--color-n1);
+} 
+#detail{
+    font-weight: 600;
+    max-width: 40ch;
+}
+header p{
+    color: var(--color-n2);
+    max-width: 55ch;
+    text-align: center;    
+}
+#container-cards ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+#container-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    padding: 1.25rem;
+    background-color: aqua;
+}
+.card h2{
+    font-size: 1.2rem;
+    color: var(--color-n1);
+    margin-bottom: 1.2rem;
+}
+.card p{
+    color: var(--color-n2);
+    font-size: .9rem;
+    max-width: 35ch 
+}
+
+#supervisor-icon{
+    display: block;
+    background-image: url('/images/icon-supervisor.svg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    height: 3.5rem;
+    width: 3.5rem;
+    align-items: ;
+}
